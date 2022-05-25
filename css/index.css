@@ -1,0 +1,45 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+body{
+    background-image:url(../img/espaco.gif);
+    background-size:cover;
+    margin-top: 10%;
+    margin-left: 20%;
+    font-size: 30px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+    
+}
+
+h1{
+    position: absolute;
+    margin: 0;
+    color: #f9f1e9;
+    font-weight: 400px;
+    text-align: center;
+ 
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 15px;
+        background-size:cover;
+    }
+}
+
+    @media only screen and (max-width: 400px){
+        body{
+            font-size: 10px;
+            background-size:cover;
+        }
+    }

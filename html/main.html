@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title var="main-title">Projeto APOD Nasa</title>
+    <link rel="stylesheet" href="../css/main.css">
+    
+
+
+   
+    <head>
+        <link rel="icon" href="../img/logoNasa.png" type="image/png" sizes="35x35">
+   </head>
+
+<body>
+    <header id="top">
+   
+         <div class="container">
+            <div id="header">
+    
+                <a id="logoNasa" href="https://www.nasa.gov/"><img src="../img/logoNasaBranco.png"
+                    alt="Logo Nasa" width="100" height="58"></a>
+    
+                    <ul id="menutop">
+                        <li><a href="https://api.nasa.gov/">API</a></li>
+                        <li><a href="#">REPOSITÓRIO</a></li>
+                        <li><a href="https://github.com/isabellaoliv">GITHUB</a></li>
+                    </ul>
+
+             </div>
+        </div>
+     
+    </header>
+
+   <main>
+     <h1 id="tituloTopo"> YOUR DAY IN THE SPACE</h1>
+     <span id="subtitulo"> Escolha uma data especial e descubra como estava o espaço neste dia!</span>
+    </main>
+
+    <section>
+            <input type="date" name="data" id="data" min="1997-05-14">
+            <button id="titulo">enviar data</button>
+             <div id="content">
+                 <img class='visibility' class="media" src="" alt="">
+                 <iframe class='visibility' width='100%' height='50%'id='video' src="" frameborder="0"></iframe>
+                  <p id="text"></p>
+            </div>
+    </section>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="../js/main.js"></script>
+
+</body>
+
+</html>
