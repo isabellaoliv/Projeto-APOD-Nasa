@@ -8,18 +8,17 @@ $('#button').click(function (e){
         url: `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${data}`,
         type:'GET',
         success: function(result){
-            const image =$('media');
+            const image =$('#imagem');
             const video =$('#video');
             console.log (result);
-            $('#titulo').text(result.title);
             $('media').attr('src', result.url);
             $('#video').attr('src', result.url);
            $('text').text(result.explanation);
 
            if(result.media_type == "image"){
-            media.html(`<img class='media' src="${result.url}"/>`)
+            imagem.html(`<img class='img' src="${result.url}">`)
         }else{
-            media.html(`<iframe class='media' src="${result.url}"> </iframe>`)
+            imagem.html(`<iframe class='img' src="${result.url}?autoplay=1&mute=1"> </iframe>`)
         }
      
         }
